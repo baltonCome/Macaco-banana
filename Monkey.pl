@@ -1,29 +1,31 @@
 % Contextualização:
 % Comousembanana - indefinido se o macaco tem a banana
 % estados (PosicãoHorizontal,Cadeira, PosiçãoVertical, PosiçãoDaCadeira, TerBananas)
-% posicão, posição1, posicão2 - Posições indefinidas que os objectos podem estar!
+% Posicãoqualquer, Posiçãoqualquer1, Posicãoqualquer2 - Posições indefinidas que os objectos podem estar!
+
 
 %Factos
 
-%Pega Banana
+%AgitarVara
 accao(
     estado(meio, emcimacadeira, meio, temvara, naotembanana),
     alcancarbananas,
     estado(meio, emcimacadeira, meio, temvara, tembanana)
 ).
 
-%Pega Vara
+%Sobe na cadeira
 accao(
-    estado(Posicaoqualquer, emcimacadeira, Posicaoqualquer, naotemvara, Comousembanana),
-    levarVara,
+    estado(Posicaoqualquer, nochao, Posicaoqualquer, temvara, Comousembanana),
+    subir,
     estado(Posicaoqualquer, emcimacadeira, Posicaoqualquer, temvara, Comousembanana)
 ).
 
-%Sobe na cadeira
+
+%Pega Vara
 accao(
-    estado(Posicaoqualquer, nochao, Posicaoqualquer, naotemvara, Comousembanana),
-    subir,
-    estado(Posicaoqualquer, emcimacadeira, Posicaoqualquer, naotemvara, Comousembanana)
+    estado(Posicaoqualquer, nochao,Posicaoqualquer, naotemvara, Comousembanana),
+    levarVara,
+    estado(Posicaoqualquer, nochao, Posicaoqualquer, temvara, Comousembanana)
 ).
 
 
@@ -41,6 +43,8 @@ accao(
     estado(Posicaoqualquer2, nochao, Posicaoindefinida, naotemvara, Comousembanana)
 ).
 
+
+%Regras
 podealcancar(
     estado(_,_,_,temvara, tembanana)
 ).
