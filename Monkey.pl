@@ -1,7 +1,7 @@
-% ContextualizaÁ„o:
+% Contextualiza√ß√£o:
 % Comousembanana - indefinido se o macaco tem a banana
-% estados (Posic„oHorizontal,Cadeira, PosiÁ„oVertical, PosiÁ„oDaCadeira, TerBananas)
-% Posic„oqualquer, PosiÁ„oqualquer1, Posic„oqualquer2 - PosiÁıes indefinidas que os objectos podem estar!
+% estados (Posic√£oHorizontal,Posi√ß√£oVertical, Posi√ß√£oHorizontalDaCadeira, TerVara, TerBananas)
+% Posic√£oqualquer, Posi√ß√£oqualquer1, Posic√£oqualquer2 - Posi√ß√µes indefinidas que os objectos podem estar!
 
 
 %Factos
